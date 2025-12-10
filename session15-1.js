@@ -85,8 +85,8 @@ if (includes){
 // Bài 7: Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử. Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
 let number = [
     -1, 3, -2, 4, 5, -6, 12, 45, -90, 0, 3, 23, -41,];
-let sort = number.sort((a,b) => b - a)
-console.log(sort)
+let sort1 = number.sort((a,b) => b - a)
+console.log(sort1)
 let userInput = +prompt("Please input number in the here")
 let include = number.includes(userInput);
 

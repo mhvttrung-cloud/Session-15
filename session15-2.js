@@ -26,28 +26,54 @@ for (let i = 0; i <number.length; i++){
         console.log("Ký tự số trong dãy", number[i]);
     }
 }; console.log("Tổng ký tự số trong dãy là :", count);
-//Hãy sắp xếp nó theo thứ tự "Từ nhỏ đến lớn"
-number[i].sort((a,b) => a - b);
-console.log(number[i]);
-
-
-
-
-
+//Hãy sắp xếp nó theo thứ tự "Từ nhỏ đến lớn"????
+//          => Tại sao trong trường hợp này ta không dùng được sort ?
 
 
 // Bài 3: Viết một chương trình để đếm số ký tự trong một chuỗi.
 
-
-
+let numberx = [1,4,5,6,7,8,3,2,"a", "b", "c"];
+let counts = 0;
+    for (let i = 0; i < numberx.length; i++){
+        if ((numberx[i])){
+            counts++;
+        }
+    }; console.log("Số ký tự trong chuỗi là :",counts);
+    
 
 
 
 
 // Bài 4: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+let a = [1,4,5,6,7,8,3,2,"a", "b", "c"];
+let b = [ "c", "s", "C", 2, 6, 1];
+console.log(a===b);
 
+let count1 = 0;
+if (a === b){
+    console.log("Chuỗi a và b giống nhau");
+} else {
+    console.log("Chuỗi a và b khác nhau");
+};
 
-
+for (let c of a){
+    if (b.includes(c)){
+        count1++
+        console.log("Các số này là các số trùng với nhau trong 2 biến a và b :", c);
+    };
+}; console.log(`Có ${count1} ký tự giống nhau !`)
 
 
 // Bài 5: Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
+
+let j = [
+    2, 4 , "u" , "-", "+", "*",
+]; 
+console.log(j);
+console.log(j.length);
+
+for (i = 0; i < j.length; i++){
+    if (j[i] === "-"){
+        j[i] = "_"
+    } 
+}; console.log(j);
