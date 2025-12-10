@@ -27,19 +27,26 @@ console.log(`${max} là số lớn nhất`);
 
 
 // Bài 3: Viết chương trình khởi tạo nhập vào một mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó và giá trị trung bình của các phần tử trong mảng.
-// let num = [
-//     3, 8, 9, 0 , 23, 140, 150, 160, 1, 4, 5, 90, 80, 100
-// ];
-// let _max = num[0];
-// let sum = 0;
-// for (let i = 0; i < num.length; i++){
-//     if (num[i]>_max){
-//         _max = num[i];
-//     };
-//     sum = sum + num[i];
-// }; console.log(_max, ":là số lớn nhất trong chuỗi");
-// let average = sum / num.length;
-// console.log(average);
+let num = [
+    3, 8, 9, 0 , 23, 140, 150, 160, 1, 4, 5, 90, 80, 100
+];
+//Nếu đây là 
+// let num = =prompt(".....");
+// Thì chúng ta phải sử dụng vòng lặp While (lập 1 lần)
+//      while(isNan){
+//num = +prompt(".....") }; 
+// 👆 Tránh người dùng nhập gì ngoài số dẫn đến lỗi !
+
+let _max = num[0];
+let sum = 0;
+for (let i = 0; i < num.length; i++){
+    if (_max < num[i]){
+        _max = num[i];
+    };
+    sum = sum + num[i];
+}; console.log(_max, ":là số lớn nhất trong chuỗi");
+let average = sum / num.length;
+console.log(average);
 
 
 // // Bài 4: Viết chương trình khởi tạo nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.
@@ -64,30 +71,30 @@ for (let i = 0;i < minus.length; i++){
 
 
 // Bài 6: Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử. Nhập phần tử số nguyên và tìm xem số đó có nằm trong mảng số nguyên không? Nếu có thuộc mảng số nguyên thì in ra "Number X is in the array" còn lại in ra "Number X is not in the array".
-// let numbe = [
-//     -1, 3, -2, 4, 5, -6, 12, 45, -90, 0, 3, 23, -41,
-// ]
-// let int = +prompt("Hãy nhập số nguyên mà bạn nghĩ là trong dãy số có nó");
-// let includes = numbe.includes(int);// so sánh tương đối !
-// if (includes){
-//     console.log(`Number ${int} is in the array`);
-// } else {
-//     console.log(`Number ${int} is not in the array`)
-// ;}
+let numbe = [
+    -1, 3, -2, 4, 5, -6, 12, 45, -90, 0, 3, 23, -41,
+]
+let int = +prompt("Hãy nhập số nguyên mà bạn nghĩ là trong dãy số có nó");
+let includes = numbe.includes(int);// so sánh tương đối !
+if (includes){
+    console.log(`Number ${int} is in the array`);
+} else {
+    console.log(`Number ${int} is not in the array`)
+;}
 
 // Bài 7: Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử. Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
-// let number = [
-//     -1, 3, -2, 4, 5, -6, 12, 45, -90, 0, 3, 23, -41,];
-// let sort = number.sort((a,b) => b - a)
-// console.log(sort)
-// let userInput = +prompt("Please input number in the here")
-// let include = number.includes(userInput);
+let number = [
+    -1, 3, -2, 4, 5, -6, 12, 45, -90, 0, 3, 23, -41,];
+let sort = number.sort((a,b) => b - a)
+console.log(sort)
+let userInput = +prompt("Please input number in the here")
+let include = number.includes(userInput);
 
-// if (include === number){
-//     console.log(`Number ... is it in the array`)
-// } else {
-//     console.log(`Number ... is not in the array`)
-// }
+if (include === number){
+    console.log(`Number ... is it in the array`)
+} else {
+    console.log(`Number ... is not in the array`)
+}
 
 
 // Bài 8: Viết chương trình khởi tạo nhập vào 2 mảng số nguyên gồm 10 phần tử, gọi là mảng a và b. Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên. Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c
